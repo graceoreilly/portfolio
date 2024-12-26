@@ -9,7 +9,7 @@ Link the files
 
 **HTML Elements**
 - Nav bar with about, projects and contact
-- Text in the center
+- Create text that will go in center of page
 - Button underneath next
 
 **CSS Styling**
