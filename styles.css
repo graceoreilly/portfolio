@@ -54,3 +54,8 @@ button {
     padding: 5px 15px; /* space between button and button text */
     margin-top: 20px; /* space between button and main text */
 }
+
+button:hover {
+background-color: #1f1a1e;
+  color: #B76E79;
+}
