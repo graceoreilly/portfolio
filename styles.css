@@ -1,6 +1,7 @@
 body {
     background-color: #322F2F;
     display: flex; /* Enables Flexbox layout */
+    flex-direction: column;
     justify-content: center; /* Centers horizontally */
     align-items: center; /* Centers vertically */
     height: 100vh; /* Makes the body fill the full viewport height */
@@ -42,4 +43,14 @@ a {
     color: #B76E79;
     text-decoration: none; /* Removes the bullet points */
     padding: 8px; /* Adds spacing between links */
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #B76E79;
+    background-color: transparent;
+    border: 2px solid #B76E79;
+    padding: 5px 15px; /* space between button and button text */
+    margin-top: 20px; /* space between button and main text */
 }
