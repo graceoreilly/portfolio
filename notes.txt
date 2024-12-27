@@ -1,0 +1,21 @@
+Adding display: 
+flex to the body is essential because Flexbox is a layout model that only applies to the direct children of the container it is set on.
+When you apply display: flex to the body:
+
+The Body Becomes the Flex Container:
+The body element now acts as a flex container, and all its direct children (in this case, your <h1> and <button> elements) become flex items.
+
+Centralized Control Over Children:
+By applying Flexbox properties (justify-content and align-items) to the body, you can control the positioning and alignment of its direct children easily.
+This ensures that everything inside the body is centered both horizontally and vertically.
+
+Viewport Height Behavior:
+Since you’re using height: 100vh on the body, it spans the entire height of the viewport.
+Flexbox ensures that the children (like your <h1> text) are centered relative to the full viewport height.
+
+If you applied display: flex directly to the <h1>, it would only affect the content inside the <h1>, not its position on the page.
+This wouldn’t achieve the desired centering of the <h1> in the middle of the viewport.
+
+Key Takeaway:
+The body is a natural choice for applying display: flex when you want to center one or more elements across the entire page.
+It’s a parent container that spans the full screen, making it the ideal candidate for such layout adjustments.
