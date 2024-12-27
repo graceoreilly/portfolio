@@ -1,31 +1,16 @@
+/*body*/
 body {
     background-color: #322F2F;
-    display: flex; /* Enables Flexbox layout */
-    flex-direction: column;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    height: 100vh; /* Makes the body fill the full viewport height */
     margin: 0; /*Removes default margin */
+    font-family: 'Inter', sans-serif; /* Added fallback for missing font */
 } 
 
-h1 {
-    color: white;
-    font-size: 64px;
-    font-family: 'Inter', sans-serif; /* Added fallback for missing font */
-    text-align: center;
-    margin: 0; /* Avoid any unexpected spacing issues */
-}
-
-.grace {
-    color: #B76E79;
-}
-
+/*navbar*/
 nav {
     display: flex; /* You need to style the nav bar itself as this is the parent container, you should target the parent container when using flex */
     position: absolute; /*this allows the element to be positioned precisely*/
     top: 0; /*pins the nav bar to the top right*/
     right: 0; /*pins the nav bar to the top right*/
-    font-family: 'Inter', sans-serif; 
     padding: 16px; /*spaces the nav bar a bit from the edges*/
 }
 
@@ -45,17 +30,47 @@ a {
     padding: 8px; /* Adds spacing between links */
 }
 
+/*Main opening section*/
+.opening_page {
+    display: flex; /* Enables Flexbox layout as it is the parent element */
+    flex-direction: column;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Makes the body fill the full viewport height */
+    text-align: center;
+}
+
+/*Large text in main section*/
+h1 {
+    color: white;
+    font-size: 64px;
+    margin: 0; /* Avoid any unexpected spacing issues */
+}
+
+.grace {
+    color: #B76E79;
+}
+
+/*button that brings down to projects*/
 button {
-    font-family: 'Inter', sans-serif;
     font-size: 20px;
     color: #B76E79;
     background-color: transparent;
     border: 2px solid #B76E79;
     padding: 5px 15px; /* space between button and button text */
     margin-top: 20px; /* space between button and main text */
+    cursor: pointer;
 }
 
 button:hover {
 background-color: #1f1a1e;
   color: #B76E79;
+}
+
+/* About section */
+.about_section {
+    background-color: #B76E79;
+    color: #322F2F;
+    text-align: center;
+    height: 100vh;
 }

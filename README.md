@@ -14,13 +14,12 @@ Link the files ✅
 
 **CSS Styling**
 - Background colour - dark grey ✅
-- Button rose gold
+- Button rose gold✅
 - Nav bar rose gold in the top right corner
 - Text larger and in the center of the page ✅
-- Make sure text is centered and responsive
+- Make sure text is centered and responsive✅
 
 *Phase Two*
-- Replan - some things to think about below
 - Add projects page
 - Design how projects will be laid out
 - Connect homepage with projects page
