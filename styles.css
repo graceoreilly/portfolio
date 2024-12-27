@@ -1,13 +1,18 @@
 body {
     background-color: #322F2F;
+    display: flex; /* Enables Flexbox layout */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 100vh; /* Makes the body fill the full viewport height */
+    margin: 0; /* Removes default margin */
 }
 
 h1 {
     color: white;
     font-size: 64px;
-    font-family: inter;
-    text-align: center; /* Same with this, would it be better to use a flex/grid approach? */
-    margin-top: 20%; /* Unsure about using this to center - ?will it be responsive */
+    font-family: 'Inter', sans-serif; /* Added fallback for missing font */
+    text-align: center;
+    margin: 0; /* Avoid any unexpected spacing issues */
 }
 
 .grace {

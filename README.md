@@ -3,9 +3,9 @@
 *Phase One*
 
 Plan:
-Create an index.html file
-Create a styles.css file
-Link the files
+Create an index.html file ✅
+Create a styles.css file ✅
+Link the files ✅
 
 **HTML Elements**
 - Nav bar with about, projects and contact
@@ -13,10 +13,11 @@ Link the files
 - Button underneath next
 
 **CSS Styling**
-- Background colour - dark grey
+- Background colour - dark grey ✅
 - Button rose gold
 - Nav bar rose gold in the top right corner
-- Text larger and in the center of the page
+- Text larger and in the center of the page ✅
+- Make sure text is centered and responsive
 
 *Phase Two*
 - Replan - some things to think about below
