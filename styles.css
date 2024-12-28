@@ -1,76 +1,121 @@
 /*body*/
 body {
-    background-color: #322F2F;
-    margin: 0; /*Removes default margin */
-    font-family: 'Inter', sans-serif; /* Added fallback for missing font */
-} 
+  background-color: #322f2f;
+  margin: 0; /*Removes default margin */
+  font-family: "Inter", sans-serif; /* Added fallback for missing font */
+}
 
 /*navbar*/
 nav {
-    display: flex; /* You need to style the nav bar itself as this is the parent container, you should target the parent container when using flex */
-    position: absolute; /*this allows the element to be positioned precisely*/
-    top: 0; /*pins the nav bar to the top right*/
-    right: 0; /*pins the nav bar to the top right*/
-    padding: 16px; /*spaces the nav bar a bit from the edges*/
+  display: flex; /* You need to style the nav bar itself as this is the parent container, you should target the parent container when using flex */
+  position: absolute; /*this allows the element to be positioned precisely*/
+  top: 0; /*pins the nav bar to the top right*/
+  right: 0; /*pins the nav bar to the top right*/
+  padding: 16px; /*spaces the nav bar a bit from the edges*/
 }
 
 ul {
-    display: flex; /*lays out the links in a row horizontally*/
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default margin */
+  display: flex; /*lays out the links in a row horizontally*/
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default margin */
 }
 
 li {
-    list-style-type: none; /* Removes bullet points */
+  list-style-type: none; /* Removes bullet points */
 }
 
 a {
-    color: #B76E79;
-    text-decoration: none; /* Removes the bullet points */
-    padding: 8px; /* Adds spacing between links */
+  color: #b76e79;
+  text-decoration: none; /* Removes the bullet points */
+  padding: 8px; /* Adds spacing between links */
 }
 
 /*Main opening section*/
 .opening_page {
-    display: flex; /* Enables Flexbox layout as it is the parent element */
-    flex-direction: column;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    height: 100vh; /* Makes the body fill the full viewport height */
-    text-align: center;
+  display: flex; /* Enables Flexbox layout as it is the parent element */
+  flex-direction: column;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Makes the body fill the full viewport height */
+  text-align: center;
 }
 
 /*Large text in main section*/
 h1 {
-    color: white;
-    font-size: 64px;
-    margin: 0; /* Avoid any unexpected spacing issues */
+  color: white;
+  font-size: 64px;
+  margin: 0; /* Avoid any unexpected spacing issues */
 }
 
 .grace {
-    color: #B76E79;
+  color: #b76e79;
 }
 
 /*button that brings down to projects*/
 button {
-    font-size: 20px;
-    color: #B76E79;
-    background-color: transparent;
-    border: 2px solid #B76E79;
-    padding: 5px 15px; /* space between button and button text */
-    margin-top: 20px; /* space between button and main text */
-    cursor: pointer;
+  font-size: 20px;
+  color: #b76e79;
+  background-color: transparent;
+  border: 2px solid #b76e79;
+  padding: 5px 15px; /* space between button and button text */
+  margin-top: 20px; /* space between button and main text */
+  cursor: pointer;
 }
 
 button:hover {
-background-color: #1f1a1e;
-  color: #B76E79;
+  background-color: #1f1a1e;
+  color: #b76e79;
 }
 
 /* About section */
 .about_section {
-    background-color: #B76E79;
-    color: #322F2F;
-    text-align: center;
-    height: 100vh;
-}
+    background-color: #b76e79;
+    color: #322f2f;
+    height: 100vh; /* Makes the section's height = the full height of the viewport */
+    display: flex;
+    justify-content: center; /* Centers all child elements horizontally */
+    align-items: center; /* Center the child elements vertically */
+    padding: 40px; /* adds padding between the section and the viewport */
+    gap: 40px; /* Space between text and image */
+    box-sizing: border-box; /*includes the padding and border in an element's total width and height*/
+  }
+  
+  /* Left section for text content */
+  .about_left {
+    flex: 1; /* The section takes up 1 flex unit of the available space, it will grow or shink if section is resized */
+    max-width: 50%; /* Limits the text width to 50% of the containers with for better readability */
+  }
+  
+  /* Heading */
+  .about_me_heading {
+    font-size: 48px;
+    margin-bottom: 20px; /* Adds space below the heading to spearate it from the paragraph text*/
+    color: #322f2f;
+    white-space: nowrap; /* Prevents the heading from breaking into two lines */
+  }
+  
+  /* Paragraph text */
+  .about_me_text {
+    font-size: 18px;
+    line-height: 1.8; /*increases space between lines of text to make it easier to read*/
+    margin-bottom: 20px; /*adds space between the paragraphs*/
+    margin-right: 50px; /*adds a bit more space between the text and the image*/
+  }
+  
+  /* Image container */
+  .image_of_me {
+    flex: 0 0 auto; /* Keeps the image container at a fixed size, prevents it from growing or shrinking in the flex layout */
+    max-width: 300px; /* Limits the image width to a max with of 300px */
+    display: flex;
+    justify-content: center; /*horizontally centers the image in the container*/
+    align-items: center; /*veritcally centers the image in the container*/
+  }
+  
+  /* Image styling */
+  .image_of_me img {
+    width: 100%; /*Ensures the image fills the container's width without exceeding it*/
+    height: auto; /*Maintains the image's aspect ratio as it resizes*/
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 4px 4px 0px 4px #322f2f;
+  }
+  
