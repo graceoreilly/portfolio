@@ -52,7 +52,7 @@ h1 {
 }
 
 /*button that brings down to projects*/
-button {
+.opening_button {
   font-size: 20px;
   color: #b76e79;
   background-color: transparent;
@@ -62,7 +62,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.opening_button:hover {
   background-color: #1f1a1e;
   color: #b76e79;
 }
