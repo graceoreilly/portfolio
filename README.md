@@ -1,5 +1,7 @@
 **Portfolio**
 
+Info: This is a project to create a portfolio page to display the projects I have been working on.
+
 *Phase One*
 
 Plan:

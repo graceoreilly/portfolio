@@ -60,14 +60,20 @@ h1 {
   padding: 5px 15px; /* space between button and button text */
   margin-top: 20px; /* space between button and main text */
   cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition effect */
 }
 
 .opening_button:hover {
-  background-color: #1f1a1e;
-  color: #b76e79;
+    background-color: #b76e79;
+    color: white;
+}
+
+.opening_button:active {
+    transform: scale(0.98); /* Button shrink effect on click */
 }
 
 /* About section */
+/*Main container for about section*/
 .about_section {
     background-color: #b76e79;
     color: #322f2f;
@@ -116,6 +122,65 @@ h1 {
     width: 100%; /*Ensures the image fills the container's width without exceeding it*/
     height: auto; /*Maintains the image's aspect ratio as it resizes*/
     border-radius: 10px; /* Adds rounded corners */
-    box-shadow: 4px 4px 0px 4px #322f2f;
+    box-shadow: 2px 2px 4px 2px #322f2f;
   }
   
+  /*First Project Section Styling*/
+/*heading at top of page*/
+.projects {
+    text-align: center;
+    color: beige;
+    font-size: 48px;
+    font-family: "Inter", sans-serif;
+}
+
+  .project_section1 {
+    height: 100vh; /* Makes the section's height = the full height of the viewport */
+    display: flex;
+    justify-content: center; /* Centers all child elements horizontally */
+    align-items: center; /* Center the child elements vertically */
+    padding: 40px; /* adds padding between the section and the viewport */
+    gap: 40px; /* Space between text and image */
+    flex-wrap: wrap; /*stacks the text and image vertically for smaller screens for responsiveness*/
+  }
+
+  /*Text and button to the left side of the screen*/
+  .cat_api_details {
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+  }
+
+   /*styling for project buttons*/
+  .project_button {
+    font-size: 20px;
+    color: #b76e79;
+    background-color: transparent;
+    border: 2px solid #b76e79;
+    padding: 5px 15px; /* space between button and button text */
+    margin-top: 20px; /* space between button and main text */
+    cursor: pointer;
+    width: 300px;
+    align-self: center;
+    transition: all 0.3s ease; /* Smooth transition effect */
+  }
+
+  .project_button:hover {
+    background-color: #b76e79;
+    color: white;
+}
+
+.project_button:active {
+    transform: scale(0.98); /* Button shrink effect on click */
+}
+
+  /*styling for cat image*/
+  .cat_img_container img {
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 2px 2px 4px 2px #b76e79;
+    max-width: 100%; /*allows the image to be responsive for different screen sizes*/
+    height: auto; /* Maintain aspect ratio */
+  }
