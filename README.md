@@ -3,25 +3,24 @@
 Info: This is a project to create a portfolio page to display the projects I have been working on.
 
 *Phase One*
-
-Plan:
-Create an index.html file ✅
-Create a styles.css file ✅
-Link the files ✅
-
-**HTML Elements**
-- Nav bar with about, projects and contact
-- Create text that will go in center of page
-- Button underneath next
-
-**CSS Styling**
-- Background colour - dark grey ✅
-- Button rose gold✅
-- Nav bar rose gold in the top right corner
-- Text larger and in the center of the page ✅
-- Make sure text is centered and responsive✅
+Create a scrolling homepage which includes the following
+- an opening page
+- an about page
+- a contact section
+- at least 2 projects
 
 *Phase Two*
-- Add projects page
-- Design how projects will be laid out
-- Connect homepage with projects page
+- Make all buttons and links functional
+- Create two separate pages that show projects in more detail
+
+*Phase Three*
+- Add two more projects
+
+*Phase Four*
+- Add a styling hoover effect in opening page
+- Add an API to about section of random facts about me
+
+**Key Learnings:**
+- Practiced a lot of styling using CSS flexbox
+- Feel much  more confident styling using CSS and flexbox
+- Learned that it is important to apply the flex styling to the parent element except on certain ocassions e.g. align-self

@@ -75,8 +75,8 @@ h1 {
 /* About section */
 /*Main container for about section*/
 .about_section {
-    background-color: #b76e79;
-    color: #322f2f;
+    /* background-color: #b76e79; */
+    color: white;
     height: 100vh; /* Makes the section's height = the full height of the viewport */
     display: flex;
     justify-content: center; /* Centers all child elements horizontally */
@@ -94,16 +94,16 @@ h1 {
   
   /* Heading */
   .about_me_heading {
-    font-size: 48px;
+    font-size: 50px;
     margin-bottom: 20px; /* Adds space below the heading to spearate it from the paragraph text*/
-    color: #322f2f;
+    color: white;
     white-space: nowrap; /* Prevents the heading from breaking into two lines */
   }
   
   /* Paragraph text */
   .about_me_text {
     font-size: 18px;
-    line-height: 1.8; /*increases space between lines of text to make it easier to read*/
+    line-height: 1.5; /*increases space between lines of text to make it easier to read*/
     margin-bottom: 20px; /*adds space between the paragraphs*/
     margin-right: 50px; /*adds a bit more space between the text and the image*/
   }
@@ -129,29 +129,37 @@ h1 {
 /*heading at top of page*/
 .projects {
     text-align: center;
-    color: beige;
-    font-size: 48px;
+    color: white;
+    font-size: 50px;
     font-family: "Inter", sans-serif;
+    padding-top: 50px;
 }
 
-  .project_section1 {
+  .cat_api {
     height: 100vh; /* Makes the section's height = the full height of the viewport */
     display: flex;
     justify-content: center; /* Centers all child elements horizontally */
     align-items: center; /* Center the child elements vertically */
-    padding: 40px; /* adds padding between the section and the viewport */
+    padding-left: 40px; /* adds padding between the section and the viewport */
+    padding-right: 40px;
+    padding-top: 0;
     gap: 40px; /* Space between text and image */
     flex-wrap: wrap; /*stacks the text and image vertically for smaller screens for responsiveness*/
   }
 
   /*Text and button to the left side of the screen*/
   .cat_api_details {
-    color: beige;
+    color: white;
     display: flex;
     flex-direction: column;
     flex: 1;
     max-width: 50%;
     text-align: center;
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: 40px;
   }
 
    /*styling for project buttons*/
@@ -183,4 +191,56 @@ h1 {
     box-shadow: 2px 2px 4px 2px #b76e79;
     max-width: 100%; /*allows the image to be responsive for different screen sizes*/
     height: auto; /* Maintain aspect ratio */
+    padding-top: 0;
   }
+
+/*styling for second project /every alterative project*/
+.rest_api {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse; /*makes the image appear the other way around*/
+    justify-content: center; 
+    align-items: center; 
+    padding-left: 40px; 
+    padding-right: 40px;
+    padding-top: 0;
+    gap: 40px; 
+    flex-wrap: wrap;
+    font-family: "Inter", sans-serif;
+  }
+
+  .rest_api_details {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .rest_api_img img {
+        border-radius: 10px;
+        box-shadow: -2px 2px 4px 2px #322f2f; /*minus added to the 2 to flip the shadow to the left side*/
+        max-width: 100%;
+        width: 500px;
+        height: auto;
+        padding-top: 0;
+      }
+
+    /*contact section*/
+.contact {
+    color: white;
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.email {
+    color: #b76e79;
+}
+
+.contact_heading {
+    font-size: 50px;
+}
