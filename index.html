@@ -11,14 +11,15 @@
     />
   </head>
   <body>
+    <script src="main.js" defer></script>
     <nav class="navbar">
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a id="aboutLink">About</a></li>
+        <li><a id="projectsLink">Projects</a></li>
+        <li><a id="contactLink">Contact</a></li>
       </ul>
     </nav>
-    <section class="opening_page">
+    <section id="opening_page">
       <h1>
         Hi, I’m <span class="grace">Grace</span>.<br />I’m a full stack
         developer.
@@ -27,7 +28,7 @@
       <button class="opening_button">View my work</button>
     </section>
 
-    <section class="about_section">
+    <section id="about_section">
         <div class="about_left">
           <h2 class="about_me_heading">About Me</h2>
           <p class="about_me_text">
@@ -47,7 +48,8 @@
         </div>
       </section>
           <!-- <p>placeholder for random fact API</p> -->
-    <section class="project_section1">
+    <section id="projects">
+      <div class="project_section1">
         <h2 class="projects">Projects</h2>
         <div class="cat_api">
         <div class="cat_api_details">
@@ -58,9 +60,10 @@
         </div>
             <div class="cat_img_container"><img src="images/cat_image.jpg" alt="Image of a cat"></div>
         </div>
-    </section>
+      </div>
+    
 
-    <section class="project_section2">
+    <div class="project_section2">
         <div class="rest_api">
             <div class="rest_api_details">
                 <h3>REST API Hackathon</h3>
@@ -70,9 +73,10 @@
             </div>
                 <div class="rest_api_img"><img src="images/postman_image.png" alt="Image of REST API code"></div>
             </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="contact">
+    <section id="contact">
         <h2 class="contact_heading">Contact</h2>
         <p>Have a question about my projects? Send me an email at <span class="email">graceoreilly111@gmail.com</span> and I'll get back to you as soon as possible!</p>
     </section>

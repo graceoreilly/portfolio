@@ -28,10 +28,11 @@ a {
   color: #b76e79;
   text-decoration: none; /* Removes the bullet points */
   padding: 8px; /* Adds spacing between links */
+  cursor: pointer;
 }
 
 /*Main opening section*/
-.opening_page {
+#opening_page {
   display: flex; /* Enables Flexbox layout as it is the parent element */
   flex-direction: column;
   justify-content: center; /* Centers horizontally */
@@ -74,7 +75,7 @@ h1 {
 
 /* About section */
 /*Main container for about section*/
-.about_section {
+#about_section {
     /* background-color: #b76e79; */
     color: white;
     height: 100vh; /* Makes the section's height = the full height of the viewport */
@@ -229,7 +230,7 @@ h1 {
       }
 
     /*contact section*/
-.contact {
+#contact {
     color: white;
     width: 800px;
     text-align: center;
