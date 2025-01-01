@@ -126,7 +126,7 @@ h1 {
     box-shadow: 2px 2px 4px 2px #322f2f;
   }
   
-  /*First Project Section Styling*/
+  /*First Project Section Styling 0NE - every other one*/
 /*heading at top of page*/
 .projects {
     text-align: center;
@@ -136,7 +136,8 @@ h1 {
     padding-top: 50px;
 }
 
-  .cat_api {
+/* ONE */
+  .cat_api, .rock_paper, .yogaFetch {
     height: 100vh; /* Makes the section's height = the full height of the viewport */
     display: flex;
     justify-content: center; /* Centers all child elements horizontally */
@@ -148,8 +149,8 @@ h1 {
     flex-wrap: wrap; /*stacks the text and image vertically for smaller screens for responsiveness*/
   }
 
-  /*Text and button to the left side of the screen*/
-  .cat_api_details {
+  /*Text and button to the left side of the screen ONE*/
+  .cat_api_details, .rock_paper_details, .yogaFetch_details {
     color: white;
     display: flex;
     flex-direction: column;
@@ -158,7 +159,17 @@ h1 {
     text-align: center;
     line-height: 1.5;
   }
-
+  
+  /*styling for images ONE*/
+  .cat_img_container img, .rockpaperscissors_img_container img, .yoga_img_container img {
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 2px 2px 4px 2px #b76e79;
+    max-width: 100%; /*allows the image to be responsive for different screen sizes*/
+    width: 500px;
+    height: auto; /* Maintain aspect ratio */
+    padding-top: 0;
+  }
+  
   h3 {
     font-size: 40px;
   }
@@ -186,17 +197,9 @@ h1 {
     transform: scale(0.98); /* Button shrink effect on click */
 }
 
-  /*styling for cat image*/
-  .cat_img_container img {
-    border-radius: 10px; /* Adds rounded corners */
-    box-shadow: 2px 2px 4px 2px #b76e79;
-    max-width: 100%; /*allows the image to be responsive for different screen sizes*/
-    height: auto; /* Maintain aspect ratio */
-    padding-top: 0;
-  }
 
-/*styling for second project /every alterative project*/
-.rest_api {
+/*styling for second project /every alterative project TWO*/
+.rest_api, .breathing_api {
     height: 100vh;
     display: flex;
     flex-direction: row-reverse; /*makes the image appear the other way around*/
@@ -210,7 +213,7 @@ h1 {
     font-family: "Inter", sans-serif;
   }
 
-  .rest_api_details {
+  .rest_api_details, .breathing_api_details {
     color: white;
     display: flex;
     flex-direction: column;
@@ -220,7 +223,7 @@ h1 {
     line-height: 1.5;
   }
 
-  .rest_api_img img {
+  .rest_api_img img, .breathing_img img {
         border-radius: 10px;
         box-shadow: -2px 2px 4px 2px #322f2f; /*minus added to the 2 to flip the shadow to the left side*/
         max-width: 100%;
