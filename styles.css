@@ -31,6 +31,10 @@ a {
   cursor: pointer;
 }
 
+h3 {
+  color: #b76e79;
+}
+
 /*Main opening section*/
 #opening_page {
   display: flex; /* Enables Flexbox layout as it is the parent element */
@@ -137,7 +141,7 @@ h1 {
 }
 
 /* ONE */
-  .cat_api, .rock_paper, .yogaFetch {
+  .wellness_project, .blog_post, .yogaFetch {
     height: 100vh; /* Makes the section's height = the full height of the viewport */
     display: flex;
     justify-content: center; /* Centers all child elements horizontally */
@@ -150,7 +154,7 @@ h1 {
   }
 
   /*Text and button to the left side of the screen ONE*/
-  .cat_api_details, .rock_paper_details, .yogaFetch_details {
+  .wellness_details, .blog_post_details, .yogaFetch_details {
     color: white;
     display: flex;
     flex-direction: column;
@@ -161,13 +165,17 @@ h1 {
   }
   
   /*styling for images ONE*/
-  .cat_img_container img, .rockpaperscissors_img_container img, .yoga_img_container img {
-    border-radius: 10px; /* Adds rounded corners */
-    box-shadow: 2px 2px 4px 2px #b76e79;
+  .wellness_img_container img, .blog_img_container img, .yoga_img_container img {
+    border-radius: 5px; /* Adds rounded corners */
+    box-shadow: 2px 2px 2px 2px #736e6f; 
     max-width: 100%; /*allows the image to be responsive for different screen sizes*/
-    width: 500px;
+    width: 600px;
     height: auto; /* Maintain aspect ratio */
     padding-top: 0;
+  }
+
+  .wellness_img_container:hover {
+    cursor: pointer;
   }
 
   h3 {
@@ -197,9 +205,37 @@ h1 {
     transform: scale(0.98); /* Button shrink effect on click */
 }
 
+.github {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; 
+}
+
+.github_button {
+  font-size: 20px;
+  color: #b76e79;
+  background-color: transparent;
+  border: 2px solid #b76e79;
+  padding: 5px 15px; /* space between button and button text */
+  margin-top: 20px; /* space between button and main text */
+  cursor: pointer;
+  width: 800px;
+  transition: all 0.3s ease; /* Smooth transition effect */
+  margin: auto;
+  text-align: center;
+}
+
+.github_button:hover {
+  background-color: #b76e79;
+  color: white;
+}
+
+.github_button:active {
+  transform: scale(0.98); /* Button shrink effect on click */
+}
 
 /*styling for second project /every alterative project TWO*/
-.rest_api, .breathing_api {
+.weather, .breathing_api {
     height: 100vh;
     display: flex;
     flex-direction: row-reverse; /*makes the image appear the other way around*/
@@ -213,7 +249,7 @@ h1 {
     font-family: "Inter", sans-serif;
   }
 
-  .rest_api_details, .breathing_api_details {
+  .weather_details, .breathing_api_details {
     color: white;
     display: flex;
     flex-direction: column;
@@ -223,11 +259,11 @@ h1 {
     line-height: 1.5;
   }
 
-  .rest_api_img img, .breathing_img img {
+  .weather_img img, .breathing_img img {
         border-radius: 10px;
-        box-shadow: -2px 2px 4px 2px #322f2f; /*minus added to the 2 to flip the shadow to the left side*/
+        box-shadow: 2px 2px 2px 2px #736e6f; /*minus added to the 2 to flip the shadow to the left side*/
         max-width: 100%;
-        width: 500px;
+        width: 600px;
         height: auto;
         padding-top: 0;
       }
