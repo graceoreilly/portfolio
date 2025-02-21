@@ -284,3 +284,376 @@ h1 {
 .contact_heading {
     font-size: 50px;
 }
+
+/*body*/
+body {
+  background-color: #322f2f;
+  margin: 0; /*Removes default margin */
+  font-family: "Inter", sans-serif; /* Added fallback for missing font */
+}
+
+/*navbar*/
+nav {
+  display: flex; /* You need to style the nav bar itself as this is the parent container, you should target the parent container when using flex */
+  position: absolute; /*this allows the element to be positioned precisely*/
+  top: 0; /*pins the nav bar to the top right*/
+  right: 0; /*pins the nav bar to the top right*/
+  padding: 16px; /*spaces the nav bar a bit from the edges*/
+}
+
+ul {
+  display: flex; /*lays out the links in a row horizontally*/
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default margin */
+}
+
+li {
+  list-style-type: none; /* Removes bullet points */
+}
+
+a {
+  color: #b76e79;
+  text-decoration: none; /* Removes the bullet points */
+  padding: 8px; /* Adds spacing between links */
+  cursor: pointer;
+}
+
+h3 {
+  color: #b76e79;
+}
+
+/*Main opening section*/
+#opening_page {
+  display: flex; /* Enables Flexbox layout as it is the parent element */
+  flex-direction: column;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Makes the body fill the full viewport height */
+  text-align: center;
+}
+
+/*Large text in main section*/
+h1 {
+  color: white;
+  font-size: 64px;
+  margin: 0; /* Avoid any unexpected spacing issues */
+}
+
+.grace {
+  color: #b76e79;
+}
+
+/*button that brings down to projects*/
+.opening_button {
+  font-size: 20px;
+  color: #b76e79;
+  background-color: transparent;
+  border: 2px solid #b76e79;
+  padding: 5px 15px; /* space between button and button text */
+  margin-top: 20px; /* space between button and main text */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+.opening_button:hover {
+    background-color: #b76e79;
+    color: white;
+}
+
+.opening_button:active {
+    transform: scale(0.98); /* Button shrink effect on click */
+}
+
+/* About section */
+/*Main container for about section*/
+#about_section {
+    /* background-color: #b76e79; */
+    color: white;
+    height: 100vh; /* Makes the section's height = the full height of the viewport */
+    display: flex;
+    justify-content: center; /* Centers all child elements horizontally */
+    align-items: center; /* Center the child elements vertically */
+    padding: 40px; /* adds padding between the section and the viewport */
+    gap: 40px; /* Space between text and image */
+    box-sizing: border-box; /*includes the padding and border in an element's total width and height*/
+  }
+  
+  /* Left section for text content */
+  .about_left {
+    flex: 1; /* The section takes up 1 flex unit of the available space, it will grow or shink if section is resized */
+    max-width: 50%; /* Limits the text width to 50% of the containers with for better readability */
+  }
+  
+  /* Heading */
+  .about_me_heading {
+    font-size: 50px;
+    margin-bottom: 20px; /* Adds space below the heading to spearate it from the paragraph text*/
+    color: white;
+    white-space: nowrap; /* Prevents the heading from breaking into two lines */
+  }
+  
+  /* Paragraph text */
+  .about_me_text {
+    font-size: 18px;
+    line-height: 1.5; /*increases space between lines of text to make it easier to read*/
+    margin-bottom: 20px; /*adds space between the paragraphs*/
+    margin-right: 50px; /*adds a bit more space between the text and the image*/
+  }
+  
+  /* Image container */
+  .image_of_me {
+    flex: 0 0 auto; /* Keeps the image container at a fixed size, prevents it from growing or shrinking in the flex layout */
+    max-width: 300px; /* Limits the image width to a max with of 300px */
+    display: flex;
+    justify-content: center; /*horizontally centers the image in the container*/
+    align-items: center; /*veritcally centers the image in the container*/
+  }
+  
+  /* Image styling */
+  .image_of_me img {
+    width: 100%; /*Ensures the image fills the container's width without exceeding it*/
+    height: auto; /*Maintains the image's aspect ratio as it resizes*/
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 2px 2px 4px 2px #322f2f;
+  }
+  
+  /*First Project Section Styling 0NE - every other one*/
+/*heading at top of page*/
+.projects {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: "Inter", sans-serif;
+    padding-top: 50px;
+}
+
+/* ONE */
+  .wellness_project, .blog_post, .yogaFetch {
+    height: 100vh; /* Makes the section's height = the full height of the viewport */
+    display: flex;
+    justify-content: center; /* Centers all child elements horizontally */
+    align-items: center; /* Center the child elements vertically */
+    padding-left: 40px; /* adds padding between the section and the viewport */
+    padding-right: 40px;
+    padding-top: 0;
+    gap: 40px; /* Space between text and image */
+    flex-wrap: wrap; /*stacks the text and image vertically for smaller screens for responsiveness*/
+  }
+
+  /*Text and button to the left side of the screen ONE*/
+  .wellness_details, .blog_post_details, .yogaFetch_details {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  /*styling for images ONE*/
+  .wellness_img_container img, .blog_img_container img, .yoga_img_container img {
+    border-radius: 5px; /* Adds rounded corners */
+    box-shadow: 2px 2px 2px 2px #736e6f; 
+    max-width: 100%; /*allows the image to be responsive for different screen sizes*/
+    width: 600px;
+    height: auto; /* Maintain aspect ratio */
+    padding-top: 0;
+  }
+
+  .wellness_img_container:hover {
+    cursor: pointer;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+   /*styling for project buttons*/
+  .project_button {
+    font-size: 20px;
+    color: #b76e79;
+    background-color: transparent;
+    border: 2px solid #b76e79;
+    padding: 5px 15px; /* space between button and button text */
+    margin-top: 20px; /* space between button and main text */
+    cursor: pointer;
+    width: 300px;
+    align-self: center;
+    transition: all 0.3s ease; /* Smooth transition effect */
+  }
+
+  .project_button:hover {
+    background-color: #b76e79;
+    color: white;
+}
+
+.project_button:active {
+    transform: scale(0.98); /* Button shrink effect on click */
+}
+
+.github {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; 
+}
+
+.github_button {
+  font-size: 20px;
+  color: #b76e79;
+  background-color: transparent;
+  border: 2px solid #b76e79;
+  padding: 5px 15px; /* space between button and button text */
+  margin-top: 20px; /* space between button and main text */
+  cursor: pointer;
+  width: 800px;
+  transition: all 0.3s ease; /* Smooth transition effect */
+  margin: auto;
+  text-align: center;
+}
+
+.github_button:hover {
+  background-color: #b76e79;
+  color: white;
+}
+
+.github_button:active {
+  transform: scale(0.98); /* Button shrink effect on click */
+}
+
+/*styling for second project /every alterative project TWO*/
+.weather, .breathing_api {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse; /*makes the image appear the other way around*/
+    justify-content: center; 
+    align-items: center; 
+    padding-left: 40px; 
+    padding-right: 40px;
+    padding-top: 0;
+    gap: 40px; 
+    flex-wrap: wrap;
+    font-family: "Inter", sans-serif;
+  }
+
+  .weather_details, .breathing_api_details {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .weather_img img, .breathing_img img {
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 2px #736e6f; /*minus added to the 2 to flip the shadow to the left side*/
+        max-width: 100%;
+        width: 600px;
+        height: auto;
+        padding-top: 0;
+      }
+
+    /*contact section*/
+#contact {
+    color: white;
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 100px;
+}
+
+.email {
+    color: #b76e79;
+}
+
+.contact_heading {
+    font-size: 50px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  .about_me_heading {
+    font-size: 40px;
+  }
+
+  .about_me_text {
+    font-size: 16px;
+    margin-right: 0;
+  }
+
+  .image_of_me {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .wellness_project, .blog_post, .weather {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .wellness_details, .blog_post_details, .yogaFetch_details, .weather_details, .breathing_api_details {
+    max-width: 100%;
+  }
+
+  .wellness_img_container img, .blog_img_container img, .yoga_img_container img, .weather_img img, .breathing_img img {
+    width: 100%;
+  }
+
+  .project_button, .github_button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  #contact {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contact_heading {
+    font-size: 40px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  #about_section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-direction: column;
+  }
+
+  .about_me_heading {
+    font-size: 30px;
+  }
+
+  .about_me_text {
+    font-size: 14px;
+    margin-right: 0;
+  }
+
+  .image_of_me {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project_button, .github_button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .contact_heading {
+    font-size: 30px;
+  }
+}
