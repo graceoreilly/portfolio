@@ -578,6 +578,13 @@ h1 {
     font-size: 48px;
   }
 
+  #about_section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-direction: column; /* Ensure elements stack vertically on smaller screens */
+  }
+
   .about_me_heading {
     font-size: 40px;
   }
@@ -589,10 +596,10 @@ h1 {
 
   .image_of_me {
     max-width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Add margin to separate the image from the text */
   }
 
-  .wellness_project, .blog_post, .weather {
+  .wellness_project, .blog_post, .yogaFetch, .weather, .breathing_api {
     flex-direction: column;
     height: auto;
     padding: 20px;
@@ -631,7 +638,7 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    flex-direction: column;
+    flex-direction: column; /* Ensure elements stack vertically on smaller screens */
   }
 
   .about_me_heading {
@@ -645,7 +652,7 @@ h1 {
 
   .image_of_me {
     max-width: 100%;
-    margin-bottom: 20px;
+     margin-bottom: 20px; /* Add margin to separate the image from the text */
   }
 
   .project_button, .github_button {
