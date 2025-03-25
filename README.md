@@ -28,6 +28,8 @@ I created this project to practice my design and frontend development skills and
   <li>Clean HTML and CSS layout and design</li>
   <li>Designed using Figma</li>
 </ul>
+<h3>Figma Screenshot of initial high fidelity design:</h3>
+<img src="images/figmadesign.png" alt="Figma Screenshot" width="600" />
 
 <h2>What I learned</h2>
 <ul>
