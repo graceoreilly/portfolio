@@ -45,5 +45,5 @@ I created this project to practice my design and frontend development skills and
 </ul>
 
 <h2>About Me</h2>
-Grace O'Reilly - Fullstack Software Developer
+Grace O'Reilly - Fullstack Software Developer <br>
 graceoreilly111@gmail.com
