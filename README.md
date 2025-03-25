@@ -43,3 +43,7 @@ I created this project to practice my design and frontend development skills and
   <li>Re-build project using React and Typescript</li>
   <li>Add individual project sections to provide more detail on each project</li>
 </ul>
+
+<h2>About Me</h2>
+Grace O'Reilly - Fullstack Software Developer
+graceoreilly111@gmail.com
