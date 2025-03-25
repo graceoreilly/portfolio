@@ -1,26 +1,43 @@
-**Portfolio**
+<h1>Personal Portfolio</h1>
+<h2>A personal porfolio to display some of the projects I have been working on</h2>
 
-Info: This is a project to create a portfolio page to display the projects I have been working on.
+**Link to deployed site:**<a>https://portfolio-bice-sigma-62.vercel.app/</a>
 
-*Phase One*
-Create a scrolling homepage which includes the following
-- an opening page
-- an about page
-- a contact section
-- at least 2 projects
+<h2>Overview</h3>
+I created this project to practice my design and frontend development skills and to have a place where all of my projects can be displayed in one place.
 
-*Phase Two*
-- Make all buttons and links functional
-- Create two separate pages that show projects in more detail
+<h2>Tech Stack</h3>
+<ul>
+  <li>
+    HTML
+  </li>
+  <li>
+    CSS
+  </li>
+  <li>
+    JavaScript
+  </li>
+    <li>
+    Vercel (Deployment)
+  </li>
+</ul>
 
-*Phase Three*
-- Add two more projects
+<h2>Features</h2>
+<ul>
+  <li>DOM manipulation to create a traildust effect</li>
+  <li>Clean HTML and CSS layout and design</li>
+  <li>Designed using Figma</li>
+</ul>
 
-*Phase Four*
-- Add a styling hoover effect in opening page
-- Add an API to about section of random facts about me
+<h2>What I learned</h2>
+<ul>
+  <li>How to use CSS Flexbox to style and position elements</li>
+  <li>Learned how to manipulate the DOM to create different effects</li>
+  <li>Practiced using Figma for design and building off a design</li>
+</ul>
 
-**Key Learnings:**
-- Practiced a lot of styling using CSS flexbox
-- Feel much  more confident styling using CSS and flexbox
-- Learned that it is important to apply the flex styling to the parent element except on certain ocassions e.g. align-self
+<h2>Future Goals</h2>
+<ul>
+  <li>Re-build project using React and Typescript</li>
+  <li>Add individual project sections to provide more detail on each project</li>
+</ul>
